@@ -10,13 +10,13 @@
 /* HEADER STYLES */
 
 #header {
-    border: 1px aqua solid;
+    /* border: 1px aqua solid; */
     justify-self: end;
     height: auto;
 }
 
 .top-bar {
-    border: 1px rgb(24, 59, 59) solid;
+    /* border: 1px rgb(24, 59, 59) solid; */
     display: flex;
     margin: 10px;
 }
@@ -33,14 +33,17 @@
 /* MAIN STYLES */
 
 #main-container {
-    border: 1px rgb(24, 59, 59) solid;
+    /* border: 1px rgb(24, 59, 59) solid; */
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 #main-container form {
+    /* border: 1px rgb(35, 218, 218) solid; */
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #logo {
@@ -51,16 +54,48 @@
     display: block;
 }
 
+#input-bar {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    height: 25px;
+    margin: 0 auto;
+    border: none; 
+    border:solid 1px rgb(88, 85, 85);
+    border-radius: 10px;
+}
+
 #buttons-search {
     margin-top: 10px;
-    border: 1px rgb(24, 59, 59) solid;
+    /* border: 1px rgb(24, 59, 59) solid; */
     display: flex;
     justify-content: space-evenly;
 }
 
 #buttons-search button{
-    padding: 10px;
+    padding: 2px;
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 7%;
 }
 
 /* FOOTER STYLES */
 
+#footer{
+    /* border: 1px rgb(24, 59, 59) solid; */
+    width: auto;
+    height: fit-content;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    
+}
+
+#footer ul {
+    display: flex;
+}
+
+.bottom-r-bar {
+    right: 0;
+}
