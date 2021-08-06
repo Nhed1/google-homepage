@@ -1,0 +1,26 @@
+#container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#header {
+    border: 1px aqua solid;
+    justify-self: end;
+}
+
+.top-bar {
+    border: 1px rgb(24, 59, 59) solid;
+    display: flex;
+    margin: 10px;
+}
+
+.top-bar li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.top-bar a {
+    text-decoration: none;
+}
