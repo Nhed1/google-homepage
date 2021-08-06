@@ -1,13 +1,18 @@
 #container {
-    height: 100%;
+    height: 100vh;
+    width: auto;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    border: solid black 1px;
 }
+
+/* HEADER STYLES */
 
 #header {
     border: 1px aqua solid;
     justify-self: end;
+    height: auto;
 }
 
 .top-bar {
@@ -24,3 +29,38 @@
 .top-bar a {
     text-decoration: none;
 }
+
+/* MAIN STYLES */
+
+#main-container {
+    border: 1px rgb(24, 59, 59) solid;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    margin: 0 auto;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#buttons-search {
+    margin-top: 10px;
+    border: 1px rgb(24, 59, 59) solid;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttons-search button{
+    padding: 10px;
+}
+
+/* FOOTER STYLES */
+
