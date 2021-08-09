@@ -1,6 +1,7 @@
 html a{
     text-decoration: none;
     color: black;
+    font-size: 0.9em;
 }
 
 #container {
@@ -29,6 +30,21 @@ html a{
 .top-bar li {
     list-style: none;
     margin-left: 40px;
+}
+
+.top-bar button{
+    margin-top: -5px;
+    padding: 5px;
+    background-color: rgb(42, 92, 185);
+    color: white;
+}
+
+.top-bar button:hover {
+    background-color: rgb(56, 106, 199);;
+}
+
+.top-bar li:hover{
+    text-decoration: underline;
 }
 
 /* MAIN STYLES */
@@ -68,13 +84,20 @@ html a{
     border-radius: 19px;
 }
 
+#input-bar:hover {
+    box-shadow: 0px 3px 10px 4px rgba(0,0,0,0.13);
+}
+
 #buttons-search {
     /* border: 1px rgb(24, 59, 59) solid; */
     margin: 15px auto;
     display: flex;
     justify-content: space-evenly;
-    width: 500px;  
-     
+    width: 500px;     
+}
+
+#buttons-search button:hover {
+    border: solid 1px rgb(173, 170, 170);
 }
 
 #buttons-search button{
@@ -89,12 +112,21 @@ html a{
 /* FOOTER STYLES */
 
 #footer {
+    background-color:  rgb(240, 240, 240);
+    padding: 15px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
     height: fit-content;
     align-self: flex-end;
-    margin-bottom: 10px;
+}
+
+#footer a {
+    color: rgb(97, 94, 94);
+}
+
+#footer a:hover {
+    text-decoration: underline;
 }
 
 #right-section{
