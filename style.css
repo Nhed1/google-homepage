@@ -1,10 +1,15 @@
+html a{
+    text-decoration: none;
+    color: black;
+}
+
 #container {
     height: 100vh;
     width: auto;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    border: solid black 1px;
+    /* border: solid black 1px; */
 }
 
 /* HEADER STYLES */
@@ -26,10 +31,6 @@
     margin-left: 40px;
 }
 
-.top-bar a {
-    text-decoration: none;
-}
-
 /* MAIN STYLES */
 
 #main-container {
@@ -44,37 +45,42 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 15px;
 }
 
 #logo {
     margin: 0 auto;
-    width: 300px;
+    width: 250px;
     max-width: 100%;
     height: auto;
     display: block;
 }
 
 #input-bar {
+    padding: 7px;
     margin: 0 auto;
     display: block;
-    width: 90%;
+    width: 500px;
     height: 25px;
     margin: 0 auto;
     border: none; 
-    border:solid 1px rgb(88, 85, 85);
-    border-radius: 10px;
+    border:solid 1px rgb(133, 128, 128);
+    border-radius: 19px;
 }
 
 #buttons-search {
-    margin-top: 10px;
     /* border: 1px rgb(24, 59, 59) solid; */
+    margin: 15px auto;
     display: flex;
     justify-content: space-evenly;
+    width: 500px;  
+     
 }
 
 #buttons-search button{
+    cursor: pointer; 
     padding: 2px;
-    width: 30%;
+    width: 150px;
     height: 40px;
     border: none;
     border-radius: 7%;
@@ -82,20 +88,27 @@
 
 /* FOOTER STYLES */
 
-#footer{
-    /* border: 1px rgb(24, 59, 59) solid; */
-    width: auto;
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
     height: fit-content;
-    display: flex;
     align-self: flex-end;
     margin-bottom: 10px;
-    
 }
 
-#footer ul {
+#right-section{
+    justify-self: right;
     display: flex;
+    justify-content: space-around;
+    width: 80%;
 }
 
-.bottom-r-bar {
-    right: 0;
+#left-section {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    justify-self: left;
+
 }
+
