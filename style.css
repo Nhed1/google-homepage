@@ -16,13 +16,11 @@ html a{
 /* HEADER STYLES */
 
 #header {
-    /* border: 1px aqua solid; */
     justify-self: end;
     height: auto;
 }
 
 .top-bar {
-    /* border: 1px rgb(24, 59, 59) solid; */
     display: flex;
     margin: 10px;
 }
@@ -33,10 +31,11 @@ html a{
 }
 
 .top-bar button{
-    margin-top: -5px;
-    padding: 5px;
-    background-color: rgb(42, 92, 185);
+    margin-top: -7px;
+    padding: 10px;
+    background-color: rgb(17, 88, 221);
     color: white;
+    border: none;
 }
 
 .top-bar button:hover {
@@ -50,16 +49,15 @@ html a{
 /* MAIN STYLES */
 
 #main-container {
-    /* border: 1px rgb(24, 59, 59) solid; */
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 500px;
 }
 
 #main-container form {
-    /* border: 1px rgb(35, 218, 218) solid; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     margin-top: 15px;
 }
@@ -69,17 +67,14 @@ html a{
     width: 250px;
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 #input-bar {
     padding: 7px;
     margin: 0 auto;
-    display: block;
     width: 500px;
     height: 25px;
     margin: 0 auto;
-    border: none; 
     border:solid 1px rgb(133, 128, 128);
     border-radius: 19px;
 }
@@ -89,7 +84,6 @@ html a{
 }
 
 #buttons-search {
-    /* border: 1px rgb(24, 59, 59) solid; */
     margin: 15px auto;
     display: flex;
     justify-content: space-evenly;
@@ -130,17 +124,31 @@ html a{
 }
 
 #right-section{
-    justify-self: right;
     display: flex;
     justify-content: space-around;
     width: 80%;
+    justify-self: right;
+    text-align: right;
+
 }
 
 #left-section {
     width: 80%;
     display: flex;
     justify-content: space-around;
-    justify-self: left;
-
+    text-align: left;
 }
 
+@media (max-width: 750px) {
+    #left-section, #right-section {
+        flex-direction: column;
+    }
+    #right-section{
+        margin-right: 20px;
+    }
+
+    #left-section {
+        margin-left: 20px;
+
+    }
+}
